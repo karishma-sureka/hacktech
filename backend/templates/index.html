@@ -2,13 +2,66 @@
 <html lang="en">
  
 <head>
-    <title>Captioned</title>
+    <title>FotoSynthesis</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    
+    <style>
+        .background{
+            background-color: #434343;
+            
+        }
+        
+        #position-centre{
+            width: 1000px;
+            margin: 200px auto;
+        }
+        
+        #header{
+            color: crimson;
+        }
+    </style>
+
+ 
 </head>
+ 
+<body class="background">
+ 
 
-<body>
+    <div class="row" id="position-centre" >
 
-<h1> HELLO WORLD </h1>
+        <div class="col-md-6 col-md-offset-3">
+            <form class="navbar-form" method="post" action="search" role="search">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            Filter
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </span>				
+                    <input type="text" placeholder="Search..." class="form-control" id="searchbox" name="searchbox">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" id="btnSeach" type="button">Go!</button>
+                    </span> 
+                </div>
+            </form>
+        </div>
+    </div>
 
+    
 </body>
+ 
+</html>
+ 
 
-<html>
+
+
+
